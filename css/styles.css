@@ -1,0 +1,282 @@
+/* General CSS for all pages */
+body
+{
+    padding:0px 0px 0px 0px;
+    z-index : 0;
+    background-color : black;
+    overflow-x : hidden;
+}
+
+.text_blue
+{
+    color : #8ddffc !important;
+}
+
+
+.text_floralwhite
+{
+    color : floralwhite !important;
+}
+
+.text_lightgrey
+{
+    color : lightgrey !important;
+}
+
+.font-aladin
+{
+    font-family: 'Aladin', cursive;
+}
+
+.font-kaushan
+{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.font-commissioner
+{
+    font-family: 'Commissioner', sans-serif;;
+}
+
+.font_ubuntu
+{
+    font-family : 'Ubuntu';
+}
+
+.font_righteous
+{
+    font-family: 'Comfortaa';
+}
+
+.dark_bg
+{
+    background-color : #222222 !important;
+}
+
+.black_bg
+{
+    background-color : black !important;
+}
+.transparent_bg{
+    background: none;
+}
+
+
+.navbar
+{
+    background-color : transparent !important;
+}
+
+
+.navbar .nav-link
+{
+    font-size: 20px;
+    position:  relative;
+}
+
+.navbar .nav-link:hover
+{
+    color : #8ddffc !important;
+}
+
+.navbar .nav_link_active
+{
+    color : #8ddffc !important;
+}
+
+.navbar .nav_active
+{
+    border-bottom : 4px solid #8ddffc;
+}
+
+.button_outline_color
+{
+    border-color : #8ddffc;
+    color : #8ddffc;
+    background : rgba(0,0,0,0);
+}
+
+.button_outline_color:hover
+{
+    background-color : #8ddffc;
+    color : black !important;
+}
+
+.button_solid_color
+{
+    background-color : #8ddffc;
+    color : black;
+    border : none;
+}
+
+
+.hr_plain
+{
+    background-color : #8ddffc;
+}
+
+.jumbotron
+{
+    padding-top : 100px;
+    background-image : url(../img/bg.png);
+    background-attachment: fixed; 
+    background-size : cover;
+}
+
+footer
+{
+    border-top : 2px solid #8ddffc;
+    background-color : #303030;
+    padding-top : 20px;
+    margin-top : 20px;
+}
+
+.footer_link:hover
+{
+    color : white;
+    text-decoration : none;
+}
+
+/*End of General CSS for all pages */
+
+/*Homepage CSS */
+.team_intro
+{
+    text-align : center;
+    color : lightgrey;
+    border-right : 1px solid #8ddffc;
+    border-left : 1px solid #8ddffc;
+}
+.home_carousel_pic
+{
+    height : 250px;
+}
+
+#row_bg
+{
+    background-image : linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0.2),rgba(0,0,0,0.2),rgba(0,0,0,0.2), rgba(0,0,0,1)), url(../img/home_row_bg.jpg);
+    background-size : 100% 100%;
+}
+
+
+
+.heading_lines
+{
+    border : 2px solid #8ddffc;
+    width : 150px;
+}
+/*Homepage CSS end*/
+
+/*event page CSS*/
+#event_content
+{
+    background-image : url(../img/event.jpg);
+    background-size : cover;
+}
+
+.bottom_outline_search
+{
+	width: calc(100% - 100px);
+	padding: 5px 10px;
+	margin-right: 15px;
+	font-size: 1.1rem;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #8ddffc;		/* Sky Blue */
+}
+
+.bottom-pills .nav-link
+{
+    color : #8ddffc !important;
+    background-color : rgba(0,0,0,0) !important;
+    border-bottom : 5px solid #8ddffc;
+    font-size : 20px;
+    font-weight : 600;
+}
+
+.bottom-pills .nav-link:not(.active) {
+    color: white !important;
+    border : none;
+}
+
+.border-pills .nav-link
+{
+    border : 3px solid #8ddffc;
+    background-color : #222222 !important;
+}
+
+.border-pills .nav-link:not(.active) {
+    border : none;
+}
+
+/*event page CSS ends*/
+
+
+/*media queries*/
+@media (max-width : 900px)
+{
+    .home_carousel_pic
+    {
+        height : 200px;
+    }
+}
+
+
+/* New css */
+.flex-column .nav-link:hover{
+    opacity: 70%;
+    transition: 0.3s;
+}
+.social-media{
+    font-size: 35px;
+    padding-left: 10px;
+}
+.social-media:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.social{
+    display: flex;
+}
+
+.event-img{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    height: 200px;
+    width: auto;
+}
+
+.event-btn{
+    margin: 2em 0;
+}
+
+@media (max-width : 992px) {
+    .fest-logo{
+        display: none;
+    }
+}
+
+/* New CSS */
+.navbar .nav-link::after{
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.navbar .nav-link:hover::after{
+    width: 60%; 
+    left: 20%;
+    right: 20%; 
+}
+
+@media(max-width : 768px){
+    .navbar .nav-link:hover::after{
+        width: 0;
+    }
+}
+/* css end */
